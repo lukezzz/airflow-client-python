@@ -127,7 +127,7 @@ class DAGDetail(ModelComposed):
             'orientation': (str,),  # noqa: E501
             'concurrency': (float,),  # noqa: E501
             'start_date': (datetime, none_type,),  # noqa: E501
-            'dag_run_timeout': (TimeDelta,),  # noqa: E501
+            'dag_run_timeout': (TimeDelta, none_type,),  # noqa: E501
             'doc_md': (str, none_type,),  # noqa: E501
             'params': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
             'end_date': (datetime, none_type,),  # noqa: E501
