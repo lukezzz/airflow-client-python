@@ -114,7 +114,7 @@ class Task(ModelNormal):
             'queue': (str,),  # noqa: E501
             'pool': (str,),  # noqa: E501
             'pool_slots': (float,),  # noqa: E501
-            'execution_timeout': (TimeDelta,),  # noqa: E501
+            'execution_timeout': (TimeDelta, none_type, ),  # noqa: E501
             'retry_delay': (TimeDelta,),  # noqa: E501
             'retry_exponential_backoff': (bool,),  # noqa: E501
             'priority_weight': (float,),  # noqa: E501
